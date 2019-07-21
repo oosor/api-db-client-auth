@@ -7,9 +7,9 @@
 
 ## Возможности
 
-1. Получение токенов типа Password Grant Tokens
-2. Получение токенов типа Client Credentials Grant Tokens
-4. Получение токенов типа Personal Access Tokens
+1. Получение токенов типа **Password Grant Tokens**
+2. Получение токенов типа **Client Credentials Grant Tokens**
+4. Получение токенов типа **Personal Access Tokens**
 
 ## Установка 
 
@@ -28,6 +28,8 @@
 }
 ```
 
+запустите `composer update`
+
 ## Подготовка к работе
 
 Имеется единственный класс `\Oosor\AuthApiDatabase\Auth` для получения любого токена из выше перечисленных.
@@ -35,12 +37,10 @@
 
 > - Для получения `Password Grant Tokens` `ВашКласс implements Oosor\AuthApiDatabase\Contracts\Configuration`
 > в методах `getClientId()`, `getClientSecret()`, `userName()`, `userPassword()` должны возвращаться соответствующие значения.
-> Остальные методы могут возвращать `null`.
-> <br>
+> Остальные методы могут возвращать `null`.<br>
 > - Для получения `Client Credentials Grant Tokens` `ВашКласс implements Oosor\AuthApiDatabase\Contracts\Configuration`
 > в методах `getClientId()`, `getClientSecret()` должны возвращаться соответствующие значения.
-> Остальные методы могут возвращать `null`.
-> <br>
+> Остальные методы могут возвращать `null`.<br>
 > - Для получения `Personal Access Tokens` `ВашКласс implements Oosor\AuthApiDatabase\Contracts\Configuration`
 > в методе `accessToken()` должен возвращать токен доступа уровня `Password Grant Tokens`.
 > Остальные методы могут возвращать `null`.
