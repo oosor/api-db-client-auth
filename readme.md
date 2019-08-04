@@ -1,6 +1,6 @@
 # Библиотека для работы с сервером API Базы данных (авторизация в сервисе и получение токенов доступа)
 
-Сервер [API Базы данных](https://gitlab.com/api-db/server)
+Сервер [API Базы данных](https://github.com/oosor/api-db)
 
 Библиотека возлагает на себя построение сложных запросов по работе с авторизацией и получение токенов доступа, предоставляет
 простой интерфейс.
@@ -19,11 +19,11 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://gitlab.com/api-db/client-php-auth"
+      "url": "https://github.com/oosor/api-db-client-auth"
     }
   ],
   "require": {
-    "oosor/client-php-auth": "~1.0.0"
+    "oosor/api-db-client-auth": "~1.0.0"
   }
 }
 ```
